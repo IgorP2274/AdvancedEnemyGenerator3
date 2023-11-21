@@ -31,7 +31,4 @@ public class Pathfinder : MonoBehaviour
                 _currentPoint = 0;
         }
     }
-
-    public void SetPath(Transform path) =>
-        _path = path;
 }
