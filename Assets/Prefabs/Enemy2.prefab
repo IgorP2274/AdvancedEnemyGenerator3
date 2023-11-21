@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8896107030889904865}
   - component: {fileID: 8896107030889904864}
   - component: {fileID: 8896107030889904871}
-  - component: {fileID: 7449171345610077920}
+  - component: {fileID: 7581850489487097710}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7449171345610077920
+--- !u!114 &7581850489487097710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,8 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00eb93a499b8824e95e13416590fa6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _path: {fileID: 0}
-  _speed: 3
-  _points: []
-  _count: 0
-  _currentPoint: 0
+  _target: {fileID: 0}
+  _speed: 2

@@ -3,11 +3,10 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Transform _path;
+    [SerializeField] private Transform _target;
     [SerializeField] private Enemy _enemy;
     [SerializeField] private int _respawnTime;
     [SerializeField] private int _enemyCount;
-
 
     private WaitForSeconds _wait;
 
@@ -22,7 +21,7 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < _enemyCount; i++)
         {
             Enemy enemy = Instantiate(_enemy, transform.position, Quaternion.identity);
-            enemy.SetPath(_path);
+            enemy.SetTarget(_target);
             yield return _wait;
         }
     }
